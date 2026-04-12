@@ -118,14 +118,91 @@ and can be read selectively. See [`docs/ree_mapping.md`](docs/ree_mapping.md).
 
 ## How to use this repository
 
-### Orientations
+### Reading pathways
 
-| You are | Start here |
-|---|---|
-| AI safety / alignment researcher | README → `docs/architectural_motifs.md` → relevant `failure_modes/` entries |
-| Psychiatrist / clinical researcher | README → `docs/psychiatric_predictions.md` → `docs/psychopathology_usage.md` → relevant `failure_modes/` entries |
-| Computational psychiatry researcher | README → `docs/ree_mapping.md` → `docs/psychiatric_predictions.md` |
-| AI engineer | README → `docs/framework_overview.md` → relevant `failure_modes/` entries |
+Different readers reach different insights from this project. The pathways below are
+sequenced: each step earns the next one.
+
+---
+
+**AI safety / alignment researcher**
+
+*The payoff: a precise argument for why most alignment research is structurally misconceived,
+and what the correct framing is.*
+
+1. README (this page) — bidirectional framing and failure mode table
+2. [`docs/why_ree.md`](docs/why_ree.md) — why the architecture is a derivation, not a design;
+   the six necessary comparators; why current AI fails at scale in predictable places
+3. Two or three failure mode entries of your choice — what structural absence looks like concretely
+4. **[`docs/alignment_claim.md`](docs/alignment_claim.md)** — the full argument: why alignment
+   is an architectural problem, not a specification problem; why love as terminal goal is
+   uncomputable exactly but directionally useful; what the structural tests are; what guarantee
+   the architectural approach provides
+
+---
+
+**Psychiatrist / clinical researcher**
+
+*The payoff: testable predictions about your patients, derived from an AI architecture that
+produces psychiatric phenomenology as emergent failure, not by design.*
+
+1. README — the moral medicine framing; what the bidirectional bridge means for psychiatry
+2. [`docs/psychopathology_usage.md`](docs/psychopathology_usage.md) — mechanism typing; what
+   structural correspondence means and does not mean
+3. [`docs/psychiatric_predictions.md`](docs/psychiatric_predictions.md) — P-001 through P-016;
+   depression, OCD, derealization, dreams, pain; each a falsifiable clinical hypothesis
+4. [`docs/pain_architecture.md`](docs/pain_architecture.md) — the accumulator model; why chronic
+   pain is not a stuck alarm but a reset condition that hasn't been met
+5. `lexicon/fish_terms.csv` — Fish's Clinical Psychopathology mapped to mechanism type and
+   AI structural equivalent; `lexicon/gap_analysis.md` for which syndromes have no current entry
+
+---
+
+**Computational psychiatry / cognitive neuroscience researcher**
+
+*The payoff: an architecture in which failure modes map to specific component absences, generating
+mechanistic hypotheses at the level of named structures and circuits.*
+
+1. README — the taxonomic project
+2. [`docs/why_ree.md`](docs/why_ree.md) — derivation of the architecture from comparator requirements;
+   the brain/sleep convergence result
+3. [`docs/ree_mapping.md`](docs/ree_mapping.md) — failure mode to REE component mapping
+4. [`docs/psychiatric_predictions.md`](docs/psychiatric_predictions.md) — the predictions the
+   architecture generates; these are the testable claims
+5. REE_assembly: `docs/architecture/ethical_agency_derivation.md` — full technical depth on
+   the comparator requirements and their neural correlates
+
+---
+
+**AI engineer / ML researcher**
+
+*The payoff: a mechanistic vocabulary for failure modes you already encounter, with architectural
+diagnoses rather than behavioural descriptions.*
+
+1. README — failure mode table; mechanism type column
+2. [`docs/architectural_motifs.md`](docs/architectural_motifs.md) — the underlying motifs that
+   generate the failure modes
+3. Failure mode entries relevant to your system class
+4. [`docs/framework_overview.md`](docs/framework_overview.md) — the architectural level of
+   analysis; why behavioural descriptions are insufficient
+5. [`docs/why_ree.md`](docs/why_ree.md) — why the failures cluster at specific architectural
+   positions and what would address them structurally
+
+---
+
+**Philosopher of mind / ethics researcher**
+
+*The payoff: a constructive argument that ethical experience and moral agency are architectural
+consequences, not separately injected capacities — and that love as terminal goal is
+uncomputable exactly but structurally well-defined.*
+
+1. README
+2. [`docs/why_ree.md`](docs/why_ree.md) — the cognifold motif; representation as perception;
+   the qualitative capacity threshold
+3. [`docs/alignment_claim.md`](docs/alignment_claim.md) — love as asymptotic goal; proxy mutations;
+   alignment as architecture not specification
+4. REE_assembly: `docs/architecture/five_axioms_foundations.md` — the eight foundational axioms
+   and their logical dependency chain; derived ethical objectives; why ethics follows necessarily
 
 ### With Claude Code skills (REE workspace)
 
@@ -159,6 +236,8 @@ and can be read selectively. See [`docs/ree_mapping.md`](docs/ree_mapping.md).
 ai-cognitive-failure-taxonomy/
 ├── README.md
 ├── docs/
+│   ├── why_ree.md                     # derivation of architecture from ethical requirements
+│   ├── alignment_claim.md             # why alignment is architectural not specification-based
 │   ├── framework_overview.md          # taxonomy philosophy and bidirectional scope
 │   ├── architectural_motifs.md        # the six core motifs and their combinations
 │   ├── ree_mapping.md                 # failure mode -> REE component mapping

@@ -237,3 +237,7 @@ For the failure mode entries: see the taxonomy table in the README and `failure_
 For the psychiatric predictions the architecture generates: `docs/psychiatric_predictions.md`
 
 For the full psychopathology term mapping: `lexicon/fish_terms.csv` and `lexicon/gap_analysis.md`
+
+For the alignment implications — why alignment is an architectural problem rather than a
+specification problem, and what the structural tests for a genuinely aligned system are:
+[`docs/alignment_claim.md`](alignment_claim.md)
