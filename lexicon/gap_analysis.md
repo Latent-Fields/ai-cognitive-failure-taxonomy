@@ -61,11 +61,11 @@ misattribution is a different failure: the distinction is self/other, not real/s
 
 **Proposed failure mode:** `agency_attribution_failure.md`
 
-**Mechanism subtype:** Agency misattribution — a subtype of comparator failure
-specifically for self-vs-other attribution. The comparator detects mismatch between
-predicted self-attribution and reported source, but attribution is assigned to external
-agent. This requires adding an 8th entry to the mechanism classification table in
-`docs/psychopathology_usage.md`.
+**Mechanism subtype:** Agency misattribution — a subtype of attribution failure as a 
+subtype of comparator failure specifically for self-vs-other attribution. The comparator
+detects mismatch between predicted self-attribution and reported source, but attribution 
+is assigned to external agent. This requires adding an 8th entry to the mechanism 
+classification table in `docs/psychopathology_usage.md`.
 
 **AI equivalent:** System does not track which outputs are self-generated vs externally
 sourced; responds to own outputs as novel external inputs (hallucinated external authority);
@@ -126,7 +126,10 @@ is about content generation) and provenance collapse (which is about source tagg
 
 **AI equivalent:** Entity resolution failures in knowledge graphs; retrieval systems that
 under-merge or over-merge entity records; systems that conflate distinct real-world entities
-or multiply them spuriously.
+or multiply them spuriously. This may be failure of attribution due to lack of distinction
+in comparator representations rather than, say pure precision error related failures and 
+the exact mechanics of whether attribution error or another error is the best core 
+epresentation needs investigating. 
 
 ---
 
@@ -181,10 +184,10 @@ additional sub-section in their existing entries.
 | Phobia | precision_misallocation.md | Add connection to fear-avoidance / pain_architecture.md |
 | Depersonalisation | provenance_collapse.md | Add as self-model/self-experience mismatch — distinct from real/synthetic; may need its own subsection |
 | La belle indifference | pain_architecture.md | Add as clinical form of z_harm_s / z_harm_a dissociation type |
-| Pseudohallucination | provenance_collapse.md | Add as partial hypothesis-tag failure; graded rather than binary |
+| Pseudohallucination | provenance_collapse.md | Add as partial hypothesis-tag failure (the concepr of a hypothesis tag this may itself be considered a belief); beleif related errors may be graded rather than binary and subject to the different mechanisms failure of beleif |
 | Anhedonia | docs/psychiatric_predictions.md | Expand P-002 to address wanting/liking dissociation; link to goal_proxy_lock_in.md |
 | Cryptomnesia | provenance_collapse.md | Add as specific form: retrieved-as-generated (compare to generated-as-retrieved) |
-| Ideas of reference | precision_misallocation.md | Add as sub-delusional aberrant salience; cite as prodromal marker |
+| Ideas of reference | precision_misallocation.md | Add as sub-delusional aberrant salience; cite as prodromal marker; susceptibility of humans to communication attribution to errors may have important reasons |
 
 ---
 
@@ -230,7 +233,8 @@ The person does not experience "I am pursuing a proxy for my real goal" — they
 normal goal-directed behaviour toward what has become their effective goal. The failure is
 visible in behaviour over time (OAI: means-end reversal; Berridge wanting without liking),
 not as an experienced mental event. Fish's catalogues form-of-experience, so proxy displacement
-is structurally outside its scope.
+is structurally outside its scope, though may capture some of the effects of this in addiction
+phenomenology with narrowing of repertoire potentially being a downstream effect of this.
 
 This is a case where the AI architectural concept has no psychopathological phenomenological
 form — but does have recognisable behavioural and neurobiological correlates (cortico-striatal
