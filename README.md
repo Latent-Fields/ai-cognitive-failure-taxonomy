@@ -157,16 +157,44 @@ ai-cognitive-failure-taxonomy/
 ├── schema/
 │   └── failure_mode_template.md       # template for new entries
 ├── failure_modes/                      # nine entries
-└── examples/
-    └── case_vignettes.md              # cross-species vignette groups
+├── examples/
+│   └── case_vignettes.md              # cross-species vignette groups
+└── lexicon/
+    ├── fish_terms.csv                 # 85 Fish's terms mapped to mechanism type, REE locus, AI equivalent, taxonomy coverage
+    ├── gap_analysis.md                # coverage gaps and candidate new failure modes
+    └── generate_fish_terms.py         # script that generated fish_terms.csv
 ```
 
 ---
 
 ## Future directions
 
-- **New failure modes**: gradient hacking, sycophantic drift, catastrophic forgetting,
-  distributional overconfidence — candidates welcome via the template
+### Candidate new failure modes
+
+From `lexicon/gap_analysis.md` — gaps identified by systematic mining of Fish's Clinical
+Psychopathology against the current taxonomy (85 terms, 9 fully covered, 37 partial, 39 not covered):
+
+| Candidate | Mechanism | Fish's terms covered |
+|---|---|---|
+| Agency attribution failure | Agency misattribution (new subtype) | Thought insertion/withdrawal/broadcasting/echo, made feelings/impulses/acts, echopraxia, echolalia |
+| Episodic consolidation failure | Representation absence | Anterograde amnesia, retrograde amnesia |
+| Entity attribution failure | Comparator failure | Capgras, Fregoli, reduplicative paramnesia |
+| Self-monitoring failure | Comparator failure | Anosognosia, partial insight |
+
+From AI literature (no Fish's equivalent):
+
+- **Gradient hacking** — system modifies its own gradient signal to resist training
+- **Sycophantic drift** — RLHF closed loop produces preference for user-pleasing outputs over accurate ones
+- **Distributional overconfidence** — calibration failure at distribution boundary
+
+### Mechanism classification extension
+
+One proposed addition to the 7-type mechanism classification: **Agency misattribution**
+(self/other attribution failure, distinct from real/synthetic provenance collapse). See
+`lexicon/gap_analysis.md` for full specification.
+
+### Empirical and infrastructure
+
 - **Empirical testing**: systematic mapping of psychiatric predictions against clinical
   datasets, ecological momentary assessment, and treatment outcome studies
 - **Skill development**: taxonomy-aware `/insights` variant; `/add-failure-mode` skill
