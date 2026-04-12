@@ -2,12 +2,54 @@
 
 ## What this taxonomy is
 
-A structured catalogue of failure modes in AI systems, organised by the architectural
-conditions that produce them rather than by the outputs they generate.
+A structured catalogue of failure modes at the intersection of AI architecture and clinical
+psychopathology. The catalogue is explicitly bidirectional: psychiatric and psychopathological
+concepts provide mechanistic precision for AI failure mode analysis; AI computational
+implementations generate testable predictions about psychiatric illness states.
 
-The central claim: most AI failures that matter are not random or mysterious. They are
-predictable consequences of specific architectural configurations interacting with specific
-environmental conditions. Naming the architecture is more useful than naming the behaviour.
+The central architectural claim: most AI failures that matter are not random or mysterious.
+They are predictable consequences of specific architectural configurations interacting with
+specific environmental conditions. Naming the architecture is more useful than naming the behaviour.
+
+---
+
+## Bidirectional utility
+
+**From psychiatry to AI**
+
+Clinical psychopathology has developed precise vocabulary for failure patterns in information
+processing systems that purely technical AI language lacks. Terms like *confabulation*,
+*perseveration*, or *precision misallocation* carry decades of mechanistic research about
+what conditions produce the failure, what sustains it, and what interventions work at what
+level. Importing these concepts into AI analysis provides that depth without requiring AI
+researchers to independently derive it.
+
+**From AI to psychiatry**
+
+Computational implementations of these failure modes do more than label clinical constructs —
+they operationalise them as generative mechanisms. Because the AI architecture makes the
+mechanism explicit, it generates specific, falsifiable predictions about the human conditions:
+
+- When an environmental condition will produce a motivational collapse vs not (P-001)
+- Whether recovery will be linear or exhibit a phase transition (P-002)
+- Which interventions will and will not work depending on where in the architecture the
+  failure is located (P-003, P-009)
+- What developmental disturbances produce which adult phenotypes (P-004, P-006)
+- What clinical markers predict which offline processes are running (P-007, P-008)
+
+These predictions are held to a different epistemic standard than structural analogies:
+they are genuine hypotheses with specified clinical tests. See `docs/psychiatric_predictions.md`.
+
+**Why this direction may matter for psychiatry**
+
+Psychiatry currently lacks mechanistic biomarkers for most common conditions. It classifies
+syndromes by symptom clusters, not by the underlying computational failure. A taxonomy that
+maps syndrome clusters to specific architectural failure modes provides:
+- A basis for mechanistically-targeted treatment selection (not just trial-and-error matching)
+- A basis for predicting treatment response from pre-treatment markers
+- A basis for identifying shared developmental pathways across apparently distinct conditions
+
+None of this is established — it is the research programme the predictions invite.
 
 ---
 

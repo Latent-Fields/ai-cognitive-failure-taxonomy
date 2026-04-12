@@ -109,6 +109,19 @@ Do not recommend clinical treatments.
 
 ---
 
+## Testable Psychiatric Predictions (Optional)
+
+Include when the computational model generates specific, falsifiable predictions about
+the human condition — not analogies, but hypotheses. State each prediction precisely
+enough to be tested: what population, what measures, what result would confirm or refute.
+Assign an epistemic status (Derived / Consistent / Partially tested / Speculative).
+
+Cross-reference with `docs/psychiatric_predictions.md` for full entries.
+
+- **[P-NNN]** [Prediction statement] — *[Epistemic status]*
+
+---
+
 ## Limits of Analogy
 
 Required when a psychopathology analogue is named. Address at least:
