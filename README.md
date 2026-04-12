@@ -4,7 +4,14 @@ A project to add precision and experience of psychopathology to AI failure modes
 ---
 
 This repository builds a structured correspondence between AI architectural failure modes
-and clinical psychopathology. The bridging is explicitly bidirectional.
+and clinical psychopathology. The bridging is explicitly bidirectional. Historically, 
+from the 18th century many people ddescribed psychiatry as moral medicine. Since the
+traits affected by mental illness converge on maintaining and restoring a persons capacity
+for necesssary functions for ethics to make sense such as moral agency, responsibility,
+being able to weigh up how decisions may affect the self and others, within the larger
+world. Though other specialities and professions may need to understand these ideas, it
+is psychiatry for which the functions of capacity for moral agency are the disciplines 
+core purview.  
 
 **From psychiatry to AI:** clinical and psychopathological concepts provide descriptive
 precision for AI failure mode analysis that purely technical language lacks. Terms like
