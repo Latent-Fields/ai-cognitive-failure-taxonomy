@@ -272,6 +272,217 @@ somatic/interoception practices).
 
 ---
 
+---
+
+## V. Pain: accumulator failure vs signal failure
+
+The REE architecture distinguishes two harm streams with different computational roles.
+This distinction — which falls out of the architecture rather than being imported from
+clinical observation — generates a set of predictions about pain that are distinct from
+both the signal model (pain as alarm) and the gate-control model (pain as modulated
+input). See `docs/pain_architecture.md` for the full mechanistic treatment.
+
+The core architectural reframe: the affective component of pain is not a signal that
+fails to turn off. It is a **consequence accumulator** with a reset condition that must
+be met. These require categorically different interventions.
+
+---
+
+### P-011: Sleep architecture is analgesic through the SWS→REM transition specifically, not through rest or duration
+
+**Prediction:** The analgesic effect of sleep on the affective dimension of chronic pain
+is mediated by the SWS→REM transition — the architectural reset point at which the
+harm-accumulator zero-point is recalibrated (MECH-204: 5-HT withdrawal during REM
+establishes the precision recalibration reference). Sleep interventions that increase
+total sleep time without improving SWS→REM architecture will show weak analgesic effects.
+Interventions that specifically restore the SWS→REM transition will show analgesic
+effects disproportionate to sleep duration gains.
+
+**Mechanism:** z_harm_a (the affective harm accumulator) does not reset automatically
+after removal of the harm source. The architectural reset condition requires the offline
+recalibration phase: SWS provides harm-salient replay consolidation (MECH-203); REM,
+defined by serotonergic withdrawal (MECH-204), establishes the zero-point against which
+the accumulator is recalibrated. Disrupted SWS→REM transition means the accumulator
+never receives its reset signal, regardless of sleep duration.
+
+**Directionality of the analgesic effect:** The prediction is selective. z_harm_s
+(discriminative: intensity, location) is not primarily reset by the sleep mechanism — it
+reflects current nociceptive input and will return with renewed stimulation. z_harm_a
+(affective: unpleasantness, motivational pressure to avoid) should show sustained
+improvement following sleep architecture restoration, because the accumulator has been
+recalibrated.
+
+**Clinical test:** In a chronic pain cohort, measure polysomnographic SWS→REM transition
+quality alongside pain NRS (intensity) and pain unpleasantness ratings separately.
+Predict: SWS→REM transition quality correlates more strongly with unpleasantness than
+with intensity. In an intervention study (e.g. CBT-I for chronic pain): changes in
+transition quality should mediate the analgesic effect more strongly than changes in
+total sleep time or sleep efficiency.
+
+**Epistemic status:** Derived, consistent (sleep-pain bidirectional relationship
+well-established; specific SWS→REM mechanism is novel).
+
+---
+
+### P-012: Chronic pain and depression are the same maintenance loop, not comorbidities with a shared risk factor
+
+**Prediction:** Chronic pain (z_harm_a elevated, sustained) and depression (z_goal
+absent, VALENCE_WANTING terrain collapsed) are not two conditions that happen to co-occur
+because of shared biology. They are expressions of the same self-sustaining architectural
+loop: elevated z_harm_a suppresses benefit-oriented exploration → benefit_exposure falls
+below the z_goal seeding threshold → VALENCE_WANTING terrain collapses → the agent
+cannot form or sustain goals → reduced goal-directed activity → fewer corrective benefit
+encounters → z_harm_a remains elevated and unrecalibrated.
+
+The prediction is therefore: the directionality of onset should not matter. Pain-first
+presentations should develop depressive features through the same loop as
+depression-first presentations that develop chronic pain. The loop is bidirectional and
+self-sustaining from either entry point.
+
+**Distinguishing prediction from existing accounts:** The shared diathesis model
+(common genetic/neurobiological risk) predicts correlation but not bidirectional
+causation or shared maintenance mechanism. This model predicts that breaking the loop at
+any node — not just treating the "primary" condition — should produce improvement in both
+directions simultaneously through the same mechanism.
+
+**Clinical test:** In a longitudinal cohort, test whether benefit_exposure proxies
+(positive daily activity count, perceived positive affordance density) mediate the
+pain → depression pathway and the depression → pain persistence pathway with comparable
+effect sizes. If both directions share the same mediator, a single intervention targeting
+that mediator should produce concurrent improvement in both without needing to treat them
+separately.
+
+**Epistemic status:** Derived, consistent (comorbidity and bidirectional causation
+well-established; shared maintenance mechanism via benefit_exposure is novel).
+
+---
+
+### P-013: Pain catastrophizing is precision misallocation on the harm stream, not a cognitive distortion
+
+**Prediction:** Pain catastrophizing — the tendency to magnify pain threat, ruminate on
+pain, and feel helpless — reflects a miscalibration of the precision weight on harm
+signals, not a distorted belief about harm that is amenable to direct cognitive
+correction. The harm stream is receiving high-precision input; the content of harm
+beliefs is a downstream consequence of that weighting, not the cause of it.
+
+**Mechanism:** Control plane precision dysregulation (high alpha on the harm channel)
+causes z_harm_s and z_harm_a inputs to be processed with disproportionate confidence.
+E3 receives a distorted confidence map — harm signals are overweighted relative to
+benefit signals — and produces viability estimates that accurately reflect this weighting.
+The beliefs ("this pain will never end", "I cannot cope") are E3's correct output given
+miscalibrated input; correcting the beliefs directly without correcting the precision
+weighting will produce only temporary change.
+
+**Treatment implication:** This predicts that cognitive restructuring targeting
+catastrophic beliefs will show limited durability if it does not simultaneously
+recalibrate the precision weighting. Interventions that directly reduce harm-channel
+gain — interoceptive exposure, acceptance-based approaches that reduce the salience
+gradient of harm signals, certain pharmacological interventions — should show more
+durable effects than belief-challenging alone.
+
+**Clinical test:** In a catastrophising cohort, measure: (a) pain intensity, (b) PCS
+catastrophising score, (c) a precision proxy (e.g. attentional bias to pain-related
+stimuli, threat perception threshold task). Predict that PCS score is better predicted
+by the precision proxy than by pain intensity alone, and that treatment-related PCS
+change is mediated by change in the precision proxy rather than by change in explicit
+belief content.
+
+**Epistemic status:** Derived, consistent with attentional bias literature; precision
+framing is novel.
+
+---
+
+### P-014: Graded activity and acceptance-based approaches provide the harm-accumulator reset condition rather than reducing pain directly
+
+**Prediction:** The therapeutic mechanism of graded activity (chronic pain rehabilitation)
+and acceptance and commitment therapy (ACT) for pain is not distraction, cognitive
+reframing, or pain habituation. These approaches work by systematically providing the
+environmental evidence required to meet the reset condition for z_harm_a: repeated
+exposure to activity at a given level, followed by absence of the predicted harm
+consequence, updates the accumulator toward recalibration.
+
+**Mechanism:** z_harm_a is an EMA-accumulated signal that does not reset on removal of
+the harm source. It resets when the organism's prediction of harm in that context is
+repeatedly unconfirmed — when approach behaviour occurs without the expected harm
+consequence. Graded activity is architecturally a controlled sequence of evidence for
+"this level of activity does not produce the predicted harm magnitude." Each successful
+graded step provides reset-condition evidence. ACT provides reset-condition evidence by
+decoupling pain experience from pain-driven avoidance — the accumulator receives evidence
+that harm signals do not necessarily predict that avoidance is required.
+
+**This is distinct from habituation:** Habituation reduces signal amplitude through
+repeated exposure. The reset-condition model predicts that the relevant mechanism is
+not reduction of pain signal but *disconfirmation of harm prediction*. Graded activity
+will be effective even when pain levels remain unchanged if the activity → harm
+prediction is disconfirmed.
+
+**Clinical test:** In a graded activity trial, measure: pain NRS, pain-related
+self-efficacy, harm prediction accuracy (predicted vs experienced harm at each graded
+step). Predict that change in harm prediction accuracy (disconfirmation rate) mediates
+outcome better than change in pain intensity or in graded activity completion rate.
+
+**Epistemic status:** Derived, consistent with graded activity/ACT outcomes literature;
+disconfirmation-as-mechanism framing is novel.
+
+---
+
+### P-015: The discriminative/affective dissociation in pain is a real architectural separation, pharmacologically and interventionally dissociable
+
+**Prediction:** The clinical observation that some patients and some interventions produce
+"pain without suffering" — reduced unpleasantness with preserved intensity, or reduced
+intensity with preserved unpleasantness — reflects a genuine architectural separation
+between z_harm_s and z_harm_a, not a reporting artifact or a difference in response bias.
+
+The two streams should be selectively modulated by different interventions:
+- Opioids: primary effect on z_harm_a (affective accumulator); patients report "the pain
+  is still there but doesn't bother me" (preserved z_harm_s, reduced z_harm_a)
+- NSAIDs / local anesthetics: primary effect on z_harm_s (nociceptive input); reduce
+  intensity but leave the accumulated affective component relatively intact acutely
+- Sleep architecture restoration: selective effect on z_harm_a via the reset mechanism
+- Contemplative/meditative practices with interoceptive focus: selective effect on
+  precision weighting of z_harm_a; intensity preserved, unpleasantness reduced
+- Anterior cingulotomy (historical): selectively ablated z_harm_a processing; patients
+  reported intense pain with complete indifference
+
+**Clinical test:** A crossover design with distinct analgesic conditions (opioid,
+NSAID, CBT-I, mindfulness-based intervention, placebo) measuring pain intensity and
+pain unpleasantness separately (NRS + McGill-affective subscale + willingness to pay
+to avoid) should show condition × dimension interactions consistent with the stream
+selectivity predictions above.
+
+**Epistemic status:** Consistent (opioid dissociation well-established, cingulotomy
+data historical; stream-selective framing unifies these under one architecture).
+
+---
+
+### P-016: Central sensitization is precision miscalibration on the discriminative stream, mechanistically distinct from affective accumulation
+
+**Prediction:** Central sensitization — allodynia, hyperalgesia, expanded receptive
+fields — represents a persistent lowering of the z_harm_s detection threshold via
+precision miscalibration (increased gain on the nociceptive input channel). This is
+architecturally distinct from chronic affective pain (elevated z_harm_a accumulator).
+They require different interventions and should not co-vary reliably.
+
+**Mechanism:** Central sensitization increases the precision weight on z_harm_s inputs:
+stimuli that previously fell below threshold now produce suprathreshold responses; the
+signal is louder, not more persistent. z_harm_a elevation reflects accumulation of
+prior harm consequences and is not directly dependent on ongoing z_harm_s input
+amplitude. The two can occur together (post-injury sensitization) or independently
+(sensitization without affective distress; affective chronification without ongoing
+sensitization).
+
+**Clinical test:** Use QST (quantitative sensory testing) to independently measure
+sensitization (lowered threshold: z_harm_s proxy) and measures of pain unpleasantness,
+sleep quality, and affective pain burden (z_harm_a proxies). Test: (a) they are
+dissociable across patients; (b) they respond differentially to treatments targeting
+each stream; (c) comorbid depression is more strongly predicted by z_harm_a proxies
+than by QST sensitization scores.
+
+**Epistemic status:** Derived, consistent with the sensitization/affective pain
+literature; explicit architectural dissociation framing is novel.
+
+---
+
 ## Epistemic status summary
 
 | Prediction | Domain | Status |
@@ -286,6 +497,12 @@ somatic/interoception practices).
 | P-008 | Dream type composition as offline marker | Derived |
 | P-009 | Exposure > restructuring when E2 is locus | Consistent |
 | P-010 | Schema poverty vs dopamine failure dissociation | Speculative |
+| P-011 | Sleep architecture as analgesic mechanism | Derived, consistent |
+| P-012 | Pain and depression as same maintenance loop | Derived, consistent |
+| P-013 | Pain catastrophizing as precision misallocation | Derived, consistent |
+| P-014 | Graded activity as reset-condition provision | Derived, consistent |
+| P-015 | Discriminative/affective dissociation is real and pharmacologically separable | Consistent |
+| P-016 | Central sensitization vs affective accumulation are mechanistically distinct | Derived, consistent |
 
 ---
 

@@ -151,7 +151,8 @@ ai-cognitive-failure-taxonomy/
 │   ├── architectural_motifs.md        # the six core motifs and their combinations
 │   ├── ree_mapping.md                 # failure mode -> REE component mapping
 │   ├── psychopathology_usage.md       # mechanism typology and constraints
-│   ├── psychiatric_predictions.md     # testable predictions for psychiatry
+│   ├── psychiatric_predictions.md     # testable predictions for psychiatry (P-001..P-016)
+│   ├── pain_architecture.md           # accumulator model vs signal model; reset conditions
 │   └── limitations.md                 # scope boundaries and analogy limits
 ├── schema/
 │   └── failure_mode_template.md       # template for new entries
