@@ -84,6 +84,24 @@ to the structural feature of absent persistent harm tracking. It does not imply 
 with this failure mode are "dangerous" in the clinical-psychopathy sense, nor that they have
 any of the other features of that diagnosis.
 
+**Additional structural manifestations.** Two further human cases share the same form and
+may help triangulate the mechanism:
+
+- **Loss-chasing in pathological gambling.** The harm signal — accumulated monetary losses —
+  is present and in principle available, but it fails to propagate to constrain the wanting
+  system. Each new bet is evaluated locally; the cumulative cost of prior behaviour does not
+  enter the decision pipeline with sufficient weight to interrupt it. This is conjoint with
+  proxy capture (see `goal_proxy_lock_in.md`): the engineered environment elevates proxy
+  salience while simultaneously suppressing the propagation of consequence. The two failure
+  modes co-occur and reinforce each other.
+- **Paraphilic harm-blindness in compulsive presentations.** In paraphilic presentations
+  that have produced documented interpersonal, occupational, or legal harm, the structural
+  failure is not absence of harm signal but failure of the harm signal to attenuate the
+  proxy-driven behaviour. The behaviour persists despite consequence; consequence does not
+  durably re-shape the cost surface around which planning occurs. As with gambling, this
+  typically co-occurs with proxy lock-in, and the two should be analysed together rather
+  than as independent failures.
+
 ---
 
 ## REE Interpretation

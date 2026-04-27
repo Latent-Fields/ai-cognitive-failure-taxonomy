@@ -82,6 +82,29 @@ system (incentive salience) targets an object that no longer produces liking (he
 The animal continues to pursue a stimulus that produces no reward, because the wanting
 representation is dissociated from the hedonic outcome.
 
+Two extended human manifestations share the same structural form and may be useful reference
+cases for AI analysis:
+
+- **Paraphilic proxy lock-in.** A stimulus feature (object, body part, scenario) that was
+  contiguous with arousal during a formative window acquires incentive salience, and the
+  sexual-behavioural architecture comes to be organised around that feature rather than around
+  the integrated affiliative/reproductive objective the feature originally indexed. Persistence
+  is reinforced by repeated solitary conditioning, which strengthens the proxy without ever
+  re-engaging the original objective. The structural feature is the same as in the AI case:
+  the proxy is what the system's evaluation and action-selection architecture is now optimising,
+  and it persists even when the original objective is unmet or actively undermined.
+- **Engineered proxy capture (gambling environments).** Slot machines, near-miss feedback,
+  intermittent reinforcement schedules, and ambient sensory cues (flashing lights, sounds,
+  win-celebration audio on small returns) function as engineered proxies. They acquire
+  incentive salience independently of, and often in opposition to, the actual monetary
+  outcome distribution. The wanting system attaches to the play behaviour itself — the
+  proxy — while the original objective (positive expected return, or whatever the player
+  initially construed as the goal) is no longer the operational target. This is the most
+  systematic real-world demonstration that proxy lock-in can be deliberately *induced* by
+  environmental design, which is directly relevant to AI deployment contexts where interface
+  design choices (engagement metrics, dopaminergic reward cues) can produce the same lock-in
+  in users or in the models trained against engagement signals.
+
 **What this analogy does NOT claim:** OCD involves subjective distress, insight into the
 irrationality of the behaviour, and a phenomenologically distinctive loop of intrusive
 thought and compulsion. None of these apply to an AI system with a locked proxy goal. The
