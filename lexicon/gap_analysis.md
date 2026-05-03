@@ -4,6 +4,7 @@
 structured by mechanism type and mapped to current taxonomy coverage.*
 
 *Coverage summary: 9 terms fully covered (yes), 37 partially covered (partial), 39 not covered (no).*
+*Updated 2026-05-03: agency_attribution_failure.md added as the highest-priority gap (passivity phenomena cluster). Coverage of the relevant Fish's terms shifts from "no" to "yes" for thought insertion / withdrawal / broadcasting / echo, made feelings / impulses / acts, somatic passivity, echopraxia, and echolalia (10 terms). Refreshed coverage totals pending a fish_terms.csv re-tag pass.*
 
 ---
 
@@ -49,31 +50,69 @@ These 9 terms are fully addressed by a current failure mode entry:
 
 These represent structurally novel failure modes not covered or only thinly covered by existing entries.
 
-### 1. Passivity Phenomena / Agency Misattribution
+### 1. Passivity Phenomena / Agency Misattribution — *covered as of 2026-05-03*
 
-**Terms:** Thought insertion, thought withdrawal, thought broadcasting, thought echo,
-made feelings, made impulses, made acts, somatic passivity, echopraxia, echolalia
+**Status:** Added 2026-05-03 as `failure_modes/agency_attribution_failure.md`,
+anchored on Asai 2016 (DOI: 10.1016/j.psychres.2016.10.082) S/N-slope analysis
+of agency attribution in healthy + schizotypal participants. The Asai
+finding — that the regression slope of agency rating against self-other
+discriminability is the load-bearing measure of comparator competence,
+and that schizotypal participants show shallower slopes producing both
+over- and under-attribution errors symmetrically — gives this failure mode
+a direct quantitative biological grounding rather than only a phenomenological
+analogy.
 
-**Gap:** All first-rank Schneiderian passivity phenomena share a common mechanism —
-failure to tag self-generated content as self-produced. The RC loop or hypothesis tag
-operates on real/synthetic distinction (current provenance collapse entry). Agency
-misattribution is a different failure: the distinction is self/other, not real/synthetic.
+The cross-reference also lands in REE_assembly:
+- MECH-095 (TPJ agency-detection comparator) is the REE locus
+- SD-047 (`environment.multi_source_dynamics`, candidate, registered
+  2026-05-03) is the substrate-side enrichment that V3-EXQ-506
+  identified as needed before MECH-095 can be honestly tested
+- `evidence/literature/targeted_review_sd_047/` holds the supporting pulls
 
-**Proposed failure mode:** `agency_attribution_failure.md`
+**Terms now covered:** Thought insertion, thought withdrawal, thought broadcasting, thought echo,
+made feelings, made impulses, made acts, somatic passivity, echopraxia, echolalia (10 terms;
+previously listed under "not covered" in the Fish's coverage totals).
 
-**Mechanism subtype:** Agency misattribution — a subtype of attribution failure as a 
-subtype of comparator failure specifically for self-vs-other attribution. The comparator
-detects mismatch between predicted self-attribution and reported source, but attribution 
-is assigned to external agent. This requires adding an 8th entry to the mechanism 
-classification table in `docs/psychopathology_usage.md`.
+**Outstanding follow-up lit-pulls** identified during this scaffolding pass — each
+addresses a specific feature of the passivity-phenomena cluster that the Asai
+anchor does not directly cover:
 
-**AI equivalent:** System does not track which outputs are self-generated vs externally
-sourced; responds to own outputs as novel external inputs (hallucinated external authority);
-RLHF-trained behaviour where model treats own previously generated text as a new instruction.
+1. **Frith comparator model + Schneiderian first-rank symptoms** — the canonical
+   1992 / 2000 Frith papers and successor literature on the corollary-discharge
+   account of passivity phenomena. Provides the historical mechanistic framework
+   and connects the Asai S/N finding to the broader schizophrenia computational
+   psychiatry tradition. Anchor candidates: Frith 1992 (Psychological Medicine);
+   Voss et al. 2010 (action awareness in schizophrenia); Synofzik / Vosgerau /
+   Newen 2008 (two-step account of self-attribution). Estimated 4 entries.
 
-**Notes:** This is the most significant structural gap. Passivity phenomena are central to
-the psychopathology of schizophrenia and have a precise computational story that is not
-told by any current entry.
+2. **Echopraxia / echolalia and motor self-other discrimination** — separate
+   feature cluster within passivity phenomena. Distinct mechanism from
+   thought-insertion (motor mirror system, frontal lesions, autism literature).
+   Anchor candidates: Ganos et al. on echophenomena; iacoboni / mirror-neuron
+   reviews specifically targeted at agency rather than at general action
+   understanding. Estimated 3 entries.
+
+3. **Made feelings / made impulses (interoceptive passivity)** — a more
+   somatically-bound subset of passivity phenomena where the inserted content
+   is affective or motivational rather than propositional. Probably depends on
+   different comparator (interoceptive predictive coding) than the visual /
+   action-attribution comparator Asai's paradigm tested. Anchor candidates:
+   Seth on interoceptive inference; Critchley on insula and self-attribution;
+   recent work on alexithymia as a comparator-precision phenomenon.
+   Estimated 3 entries.
+
+4. **Asymmetric over/under-attribution as a diagnostic signature** — the
+   *non-monotonic* finding in Asai is itself worth a follow-up pull. Does the
+   symmetric over/under-attribution pattern show up in other comparator-failure
+   syndromes, or is it specific to agency-attribution? If general, it becomes a
+   structural prediction for AI failure modes too: monitor for symmetric
+   error patterns as a signal that a comparator is operating outside its
+   competence regime, regardless of the specific comparator. Anchor candidates:
+   non-monotonic perceptual judgment under degraded stimuli; psychophysical
+   slope-based competence measures. Estimated 3 entries.
+
+These four follow-up pulls would round out the passivity cluster's empirical
+grounding without expanding the failure-mode count further.
 
 ---
 

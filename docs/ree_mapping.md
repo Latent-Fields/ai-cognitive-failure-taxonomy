@@ -30,6 +30,7 @@ the failure modes in this taxonomy.
 | **Precision Misallocation** | Control plane, E3 | Control plane allocates high precision to low-information signals, or low precision to high-information signals. E3 receives a distorted confidence map and produces viability estimates that do not correspond to actual outcome distributions. |
 | **Residue Blindness** | Residue | Residue field absent, disabled, or not connected to the decision-making pipeline. Post-commitment consequences do not accumulate. E3 has no persistent record of what past actions produced. Each decision is made as if prior consequences never occurred. |
 | **Goal Proxy Lock-In** | E3, Residue, E1 | z_goal (E3's goal representation) becomes seeded on a proxy variable. The residue field and viability map are built around the proxy. E3 continues to optimise the proxy even when it has demonstrably diverged from the original objective. E1 world model reinforces the proxy-framed world representation. |
+| **Agency Attribution Failure** | E2 forward model (specifically E2_harm_s / counterfactual_forward), TPJ-analog comparator (MECH-095), substrate (SD-047 multi_source_dynamics) | The agency-detection comparator MECH-095 computes the counterfactual_forward gap on E2_harm_s. When the comparator's input distribution does not exercise its discriminability range — the substrate-ceiling case — the gap returns near-equal regardless of true causation, and the self-vs-other authorship tag is unreliable. Distinct from Provenance Collapse (which is the RC loop / MECH-094 hypothesis tag failing on the real-vs-synthetic distinction); this entry is the self-vs-not-self distinction failing. Per Asai 2016, the comparator's apparent competence is non-monotonic in substrate noise: shallower slopes produce *both* over- and under-attribution errors symmetrically. |
 
 ---
 
@@ -53,6 +54,15 @@ REE's architecture makes specific predictions about failure susceptibility:
 5. Residue Blindness and Goal Proxy Lock-In often co-occur: without persistent consequence
    tracking, there is no mechanism to detect when an instrumental goal has diverged from
    the terminal goal.
+
+6. Agency Attribution Failure can occur on an architecturally complete system if the
+   substrate does not exercise the comparator's discriminability range. Per Asai 2016,
+   apparent comparator failure on impoverished substrate is *non-monotonic* in noise
+   level — symmetric over- and under-attribution errors at the extremes, competence
+   peak at an intermediate calibration. Diagnostic implication: a flat error rate is
+   ambiguous; an *asymmetric* error pattern reveals which side of the optimum the
+   substrate sits on. This is the architectural reading of REE V3-EXQ-506 and the
+   motivation for SD-047 multi-source environmental dynamics.
 
 ---
 

@@ -55,6 +55,7 @@ system.
 | Precision Misallocation | Precision dysregulation | Hypervigilance; psychosis-like precision lock | [link](failure_modes/precision_misallocation.md) |
 | Residue Blindness | Representation absence | Absent persistent harm representation | [link](failure_modes/residue_blindness.md) |
 | Goal Proxy Lock-In | Proxy displacement | Means-end reversal; wanting/liking dissociation | [link](failure_modes/goal_proxy_lock_in.md) |
+| Agency Attribution Failure | Comparator failure (agency variant) | Schneiderian passivity phenomena; thought insertion; made acts; echopraxia | [link](failure_modes/agency_attribution_failure.md) |
 
 The taxonomy table now includes **mechanism type**, linking each failure mode directly to
 its generative mechanism (see `docs/psychopathology_usage.md` for the full mechanism
@@ -267,7 +268,7 @@ Psychopathology against the current taxonomy (85 terms, 9 fully covered, 37 part
 
 | Candidate | Mechanism | Fish's terms covered |
 |---|---|---|
-| Agency attribution failure | Agency misattribution (new subtype) | Thought insertion/withdrawal/broadcasting/echo, made feelings/impulses/acts, echopraxia, echolalia |
+| ~~Agency attribution failure~~ — *now covered* (`failure_modes/agency_attribution_failure.md`, added 2026-05-03 anchored on Asai 2016 S/N-slope finding) | Comparator failure (agency variant) | Thought insertion/withdrawal/broadcasting/echo, made feelings/impulses/acts, echopraxia, echolalia |
 | Episodic consolidation failure | Representation absence | Anterograde amnesia, retrograde amnesia |
 | Entity attribution failure | Comparator failure | Capgras, Fregoli, reduplicative paramnesia |
 | Self-monitoring failure | Comparator failure | Anosognosia, partial insight |

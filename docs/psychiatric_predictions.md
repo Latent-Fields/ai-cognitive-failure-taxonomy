@@ -483,6 +483,95 @@ literature; explicit architectural dissociation framing is novel.
 
 ---
 
+## VI. Agency attribution and passivity phenomena
+
+### P-017: Passivity phenomena and healthy over-attribution share a single comparator-slope mechanism, not separate mechanisms
+
+The cluster of Schneiderian first-rank passivity phenomena — thought
+insertion, thought withdrawal, thought broadcasting, thought echo, made
+feelings, made impulses, made acts — is conventionally treated as a
+distinct mechanism class from healthy over-attribution errors (e.g.
+overclaiming agency in ambiguous causal scenarios). REE's MECH-095
+agency-detection comparator framing predicts these are *the same
+mechanism* operating at different points on its discriminability
+slope, not different mechanisms.
+
+**Anchor finding:** Asai 2016 (DOI:
+[10.1016/j.psychres.2016.10.082](https://doi.org/10.1016/j.psychres.2016.10.082))
+showed that healthy participants with high schizotypal scores produced
+both over- AND under-attribution errors symmetrically depending on the
+S/N regime of the stimulus — the same shallow-slope signature that
+should produce thought-insertion phenomena in clinical schizophrenia.
+
+**Predicted result:** In a clinical-high-risk-for-psychosis cohort
+tested with the Asai paradigm sampled across the full discriminability
+range, the slope of agency-rating against discriminability should be
+shallower than in matched controls AND the error pattern should cross
+the midpoint with symmetric over/under-attribution either side of it.
+Crucially, individual differences in slope shallowness should predict
+later passivity-phenomena conversion better than either over- or
+under-attribution rate alone.
+
+**What would refute it:** If passivity phenomena dissociate from the
+slope-shallowness signature — for example, if some patients with clear
+thought-insertion show a normal slope and a constant attribution
+*offset* rather than a shallow slope — that would imply a separate
+mechanism (additive bias rather than slope degradation) and would
+require splitting agency-attribution failure into two sub-modes.
+
+**Architectural cross-reference:** REE MECH-095 (TPJ-analog
+agency-detection comparator); SD-047 (multi-source environmental
+dynamics) provides the substrate-side input distribution required for
+the comparator's slope to be measurable in the V3 architecture. See
+`failure_modes/agency_attribution_failure.md`.
+
+**Epistemic status:** Derived from Asai 2016 + REE substrate-ceiling
+diagnosis on MECH-095. The single-mechanism reading is novel; the
+empirical leg (Asai's healthy-schizotypal slope finding) is published
+and replicable.
+
+### P-018: Substrate enrichment of self-other-relevant stimulus statistics improves passivity phenomena before content-level CBT does
+
+If P-017 is correct — passivity phenomena are a comparator-slope
+phenomenon driven by inadequate input distribution — then
+interventions that enrich the comparator's input statistics should
+improve passivity symptoms before interventions that target the
+content of the symptoms.
+
+**Predicted result:** In first-episode psychosis with prominent
+passivity symptoms, structured exposure to multi-agent social
+environments with rich agent-vs-environment causation cues
+(operationalised: agency-attribution-relevant tasks with naturalistic
+multi-source stimulus statistics) should reduce passivity-symptom
+severity scores faster than CBT-as-usual. The dissociation should be
+specific: delusion content, hallucination frequency, and other
+non-passivity symptoms should not show the same differential
+improvement.
+
+**What would refute it:** Equal improvement in passivity and
+non-passivity symptoms under both intervention arms would imply that
+content-level intervention is sufficient and that substrate enrichment
+adds nothing beyond non-specific therapy effects. A specifically
+*worse* outcome under enrichment-targeted intervention would imply
+that overload of the agency-detection comparator under rich substrate
+is destabilising for vulnerable patients — which is itself a testable
+prediction consistent with Asai's non-monotonic finding.
+
+**Architectural cross-reference:** SD-047 (multi-source environmental
+dynamics) is the V3-side analog of the proposed substrate enrichment.
+The clinical prediction extrapolates the architectural mechanism to
+human intervention design, and is more speculative than P-017
+correspondingly.
+
+**Epistemic status:** Speculative. Substrate-enrichment reasoning
+extrapolated to clinical intervention. Promotion to "Derived" or
+"Consistent" requires either a published RCT showing differential
+passivity-symptom reduction under environment-rich vs content-focused
+intervention, or successful SD-047 V3 validation showing the
+substrate-side mechanism in REE.
+
+---
+
 ## Epistemic status summary
 
 | Prediction | Domain | Status |
@@ -503,6 +592,8 @@ literature; explicit architectural dissociation framing is novel.
 | P-014 | Graded activity as reset-condition provision | Derived, consistent |
 | P-015 | Discriminative/affective dissociation is real and pharmacologically separable | Consistent |
 | P-016 | Central sensitization vs affective accumulation are mechanistically distinct | Derived, consistent |
+| P-017 | Passivity phenomena and healthy over-attribution share a single comparator-slope mechanism | Derived (REE) + empirically anchored (Asai 2016) |
+| P-018 | Substrate enrichment improves passivity phenomena faster than content-level CBT | Speculative |
 
 ---
 
