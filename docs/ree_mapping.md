@@ -31,6 +31,7 @@ the failure modes in this taxonomy.
 | **Residue Blindness** | Residue | Residue field absent, disabled, or not connected to the decision-making pipeline. Post-commitment consequences do not accumulate. E3 has no persistent record of what past actions produced. Each decision is made as if prior consequences never occurred. |
 | **Goal Proxy Lock-In** | E3, Residue, E1 | z_goal (E3's goal representation) becomes seeded on a proxy variable. The residue field and viability map are built around the proxy. E3 continues to optimise the proxy even when it has demonstrably diverged from the original objective. E1 world model reinforces the proxy-framed world representation. |
 | **Agency Attribution Failure** | E2 forward model (specifically E2_harm_s / counterfactual_forward), TPJ-analog comparator (MECH-095), substrate (SD-047 multi_source_dynamics) | The agency-detection comparator MECH-095 computes the counterfactual_forward gap on E2_harm_s. When the comparator's input distribution does not exercise its discriminability range — the substrate-ceiling case — the gap returns near-equal regardless of true causation, and the self-vs-other authorship tag is unreliable. Distinct from Provenance Collapse (which is the RC loop / MECH-094 hypothesis tag failing on the real-vs-synthetic distinction); this entry is the self-vs-not-self distinction failing. Per Asai 2016, the comparator's apparent competence is non-monotonic in substrate noise: shallower slopes produce *both* over- and under-attribution errors symmetrically. |
+| **Modulatory Signal Without Selection Authority** | E3, Control plane | A modulatory score-bias channel (curiosity, vigor, goal salience) is composed into E3 trajectory scoring, but the control plane sets its gain too low relative to the dominant harm/goal term to change E3's argmax. The signal is computed and active yet behaviourally silent. Same locus as Precision Misallocation (control-plane weighting into E3) but the *under-attending* pole — informative modulators are under-weighted to behavioural silence, rather than noise being over-attended. Upstream of Commitment Dysregulation: it concerns *which* option E3 selects, not *when* the selected option crosses the commit threshold. REE evidence: V3-EXQ-604a (curiosity bias 0.0 even fully-on) and V3-EXQ-624a (vigor fires, action density unchanged). |
 
 ---
 
@@ -63,6 +64,14 @@ REE's architecture makes specific predictions about failure susceptibility:
    ambiguous; an *asymmetric* error pattern reveals which side of the optimum the
    substrate sits on. This is the architectural reading of REE V3-EXQ-506 and the
    motivation for SD-047 multi-source environmental dynamics.
+
+7. Modulatory Signal Without Selection Authority is diagnosable only by ablation against
+   behaviour, never by checking signal activity. A modulator can be wired, gated, and
+   non-zero while contributing nothing to the chosen action because its control-plane gain
+   is dominated at the E3 arbitrator. The repair is relative-scale arbitration at/after E3
+   scoring, not a larger bias — and not a commit-threshold change (that is Commitment
+   Dysregulation, a downstream stage). This is the architectural reading of REE V3-EXQ-604a
+   (curiosity) and V3-EXQ-624a (vigor): both modulators fired and left behaviour unchanged.
 
 ---
 

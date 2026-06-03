@@ -572,6 +572,129 @@ substrate-side mechanism in REE.
 
 ---
 
+## VII. Action production: goal formation, selection authority, and commitment onset
+
+This cluster comes from a convergent set of REE-v3 failures (2026-06-03) in which the system
+is *internally active* — evaluator running, drives firing, candidate representations present —
+yet fails to convert that activity into committed action. The clinical resonance is with the
+catatonic-like / abulic / akinetic-mutism family: not absence of processing, but a failure of
+the selection-and-commitment loop to give goal, salience, curiosity, and vigor signals enough
+authority to become behaviour. Each prediction below isolates a *different stage* of that
+pathway, which is the source of its discriminating power. See
+`docs/executable_bridge_neurology_psychiatry.md` for the framing and
+`failure_modes/modulatory_signal_without_selection_authority.md` for the selection-authority entry.
+
+### P-019: Goal-directed motivational deficit can arise from absent reward-contact history, not only from incentive-gain suppression or schema poverty
+
+**Prediction:** A subgroup of patients with impoverished goal-directed behaviour will show a
+deficit at the level of *goal formation*: the incentive-representation machinery is intact and
+can form a goal under forced, supra-threshold reward contact, but ecologically the goal never
+forms because the patient does not accrue enough reward-contact / consummatory history for it
+to consolidate. This is distinct from incentive-gain suppression (the wanting signal is
+down-weighted; cf. P-003) and from absent goal *content* / E1 schema poverty (cf. P-010): here
+the formation *process* never runs because the upstream competence that generates reward contact
+is itself deficient.
+
+**Mechanism:** z_goal (the goal/wanting representation) is seeded from accumulated
+reward-contact (`benefit_exposure`, the consummatory-contact analog feeding goal formation). An
+agent that cannot reach survival/foraging competence never accrues that history, so the goal
+stays at its zero state — even though, under forced supra-threshold benefit+drive, the pipeline
+demonstrably forms a goal. The deficit is developmental/experiential and upstream of the goal
+representation, not a defect of the representation or of incentive gain.
+
+**REE evidence:** V3-EXQ-603e/626a/622 (goal-stream cluster). The goal latent is `0` on all 15
+ecological cells; it forms (`≈ 0.19`) only under forced benefit+drive (a substrate contract
+test confirms formation under adequate input); 2 of 3 seeds never reach foraging competence.
+Governance-classified `non_contributory` / `substrate_ceiling` — a discovered prerequisite, not
+a falsification.
+
+**Clinical test:** In an amotivation/avolition cohort, separately measure (a) the capacity to
+*acquire* reward contact (behavioural activation rate, success rate of initiated approach,
+foraging-equivalent task competence) and (b) goal formation under *scaffolded, guaranteed*
+reward contact (does a stable goal representation form when contact is supplied externally?).
+Predict a subgroup with intact (b) but deficient (a): goals form when reward contact is
+externally supplied but not under self-directed effort. This subgroup should respond to
+competence-scaffolding / guaranteed-contact interventions (graded mastery, supported engagement)
+rather than to incentive-gain pharmacology — and is distinct from the absent-E1-schema subgroup
+of P-010.
+
+**Epistemic status:** Partially tested (REE), speculative clinically.
+
+---
+
+### P-020: A negative-symptom subgroup reflects loss of selection authority for intact incentive signals, not loss of the signals
+
+**Prediction:** A dissociable subgroup of negative-symptom / abulic patients will show *intact*
+internal incentive and exploratory signals (preserved anticipatory representation, curiosity,
+stated preference, consummatory response) that nonetheless fail to convert into selected,
+initiated behaviour. For this subgroup, interventions that increase incentive *magnitude* will
+be ineffective; only interventions that restore the *decision-relevance* (selection authority)
+of those incentives at the action-selection stage will help.
+
+**Mechanism:** A modulatory incentive channel (exploration/novelty, tonic vigor, goal salience)
+is computed and routed to the selection arbitrator but carries too little effective gain
+relative to the dominant value term to change which action is chosen. The signal is present and
+active; it simply lacks authority at the basal-ganglia-like selection gate. Raising its
+magnitude does not help if the deficit is in its relative gain at arbitration. (See
+`failure_modes/modulatory_signal_without_selection_authority.md`.)
+
+**REE evidence:** V3-EXQ-604a (curiosity bias `0.0` in every arm including fully-enabled;
+selected-action entropy byte-identical across all five ablation arms) and V3-EXQ-624a (vigor gate
+fires, `v_t = 0.05`, yet action density byte-identical between vigor-ON and vigor-OFF). The
+modulators fire but never move the selected action. Governance-classified `non_contributory` /
+`substrate_ceiling` (selection-authority sub-type).
+
+**Clinical test:** In a negative-symptom cohort, measure separately (a) incentive signal presence
+(anticipatory pleasure scales, curiosity/novelty-seeking measures, consummatory response) and
+(b) behavioural conversion (initiation rate, choice influence of a manipulated incentive).
+Predict a subgroup with preserved (a) but failed (b). Test whether this subgroup responds to
+interventions that change the *contrast/relevance* of incentives at the point of choice
+(structured choice architectures, decision support that raises the weight of the
+selected-against option) rather than to magnitude-raising (incentive intensification, dopaminergic
+gain). The discriminating result: magnitude-raising fails and authority-restoring succeeds in the
+*same* patients.
+
+**Epistemic status:** Derived (REE), speculative clinically.
+
+---
+
+### P-021: An undifferentiated value landscape produces decisional-initiation failure distinct from a too-high commit threshold
+
+**Prediction:** A mechanistically distinct route to akinetic / catatonic-like decisional-initiation
+failure exists in which the commit *threshold* is set correctly but the *value margin between
+options never becomes large enough to reach it* — the option values are nearly tied, so no
+committable decision forms. This is separable from the overcalibrated-threshold continuum (P-005:
+catatonia/OCD with a threshold set too high) and predicts a different intervention: increasing
+value *contrast* (decision evidence / option differentiation) rather than lowering the threshold.
+
+**Mechanism:** Commitment onset requires the decision margin (the value gap between the best and
+next-best option) to reach an admission bound. If the value landscape is flat — options
+undifferentiated — the margin never reaches the bound and the commitment gate never admits,
+regardless of how the threshold is set. The internal evaluator runs normally; the bound is simply
+never approached. This is a failure of *value differentiation upstream of the gate*, not of the
+gate's setpoint.
+
+**REE evidence:** V3-EXQ-629 (MECH-342 ecological commitment-release): mean decision margin
+`0.00074` — roughly 70× *below* the admission floor and *identical* in healthy and degraded
+conditions — so commitment never naturally forms (`n_commit_entries = 0`; the commit latch is
+never elevated). Diagnosed `NO_NATURAL_COMMITMENT`; governance-classified
+`measurement_test_design_defect` / non-falsification.
+
+**Clinical test:** In patients with akinesia / abulia / catatonic features, distinguish two
+mechanisms: (i) threshold-too-high (P-005) — predicts response to threshold-lowering
+interventions (e.g. lorazepam in catatonia) with a value landscape that has adequate option
+contrast but never clears the bar; (ii) flat-value-margin — predicts *non*-response to
+threshold-lowering, an undifferentiated option-value structure (near-chance discrimination
+between options of objectively different value on a calibrated value-based decision task), and
+response to interventions that *increase option contrast* (structured choice with exaggerated
+value differences, externalised decision evidence). The discriminating prediction: the
+flat-margin subgroup shows poor option-value discrimination and does not respond to
+commit-threshold-lowering agents.
+
+**Epistemic status:** Derived (REE), speculative clinically.
+
+---
+
 ## Epistemic status summary
 
 | Prediction | Domain | Status |
@@ -594,6 +717,9 @@ substrate-side mechanism in REE.
 | P-016 | Central sensitization vs affective accumulation are mechanistically distinct | Derived, consistent |
 | P-017 | Passivity phenomena and healthy over-attribution share a single comparator-slope mechanism | Derived (REE) + empirically anchored (Asai 2016) |
 | P-018 | Substrate enrichment improves passivity phenomena faster than content-level CBT | Speculative |
+| P-019 | Goal-directed deficit from absent reward-contact history (distinct from gain suppression / schema poverty) | Partially tested (REE) |
+| P-020 | Negative-symptom subgroup = loss of selection authority for intact incentives, not loss of incentives | Derived (REE) |
+| P-021 | Flat value-margin decisional-initiation failure, distinct from too-high commit threshold | Derived (REE) |
 
 ---
 

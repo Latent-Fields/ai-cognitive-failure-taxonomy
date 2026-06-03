@@ -56,6 +56,7 @@ system.
 | Residue Blindness | Representation absence | Absent persistent harm representation | [link](failure_modes/residue_blindness.md) |
 | Goal Proxy Lock-In | Proxy displacement | Means-end reversal; wanting/liking dissociation | [link](failure_modes/goal_proxy_lock_in.md) |
 | Agency Attribution Failure | Comparator failure (agency variant) | Schneiderian passivity phenomena; thought insertion; made acts; echopraxia | [link](failure_modes/agency_attribution_failure.md) |
+| Modulatory Signal Without Selection Authority | Precision dysregulation (selection-authority variant) | Avolition / negative-symptom amotivation; psychomotor poverty (internally intact, behaviourally inert) | [link](failure_modes/modulatory_signal_without_selection_authority.md) |
 
 The taxonomy table now includes **mechanism type**, linking each failure mode directly to
 its generative mechanism (see `docs/psychopathology_usage.md` for the full mechanism
@@ -253,7 +254,7 @@ ai-cognitive-failure-taxonomy/
 │   └── limitations.md                 # scope boundaries and analogy limits
 ├── schema/
 │   └── failure_mode_template.md       # template for new entries
-├── failure_modes/                      # nine entries
+├── failure_modes/                      # eleven entries
 ├── examples/
 │   └── case_vignettes.md              # cross-species vignette groups
 └── lexicon/
@@ -283,11 +284,12 @@ From AI literature (no Fish's equivalent):
 - **Gradient hacking** — system modifies its own gradient signal to resist training
 - **Sycophantic drift** — RLHF closed loop produces preference for user-pleasing outputs over accurate ones
 - **Distributional overconfidence** — calibration failure at distribution boundary
-- **Modulatory signal without selection authority** — a drive or bias (curiosity, vigor, goal salience)
-  is computed and gated but never changes the selected action; distinct from commitment-threshold
-  miscalibration (it is upstream of the threshold) and from goal proxy lock-in. See
-  [`docs/executable_bridge_neurology_psychiatry.md`](docs/executable_bridge_neurology_psychiatry.md)
-  (REE-v3 604a/624a; abulia / negative-symptom analogue at the basal-ganglia selection gate)
+- ~~**Modulatory signal without selection authority**~~ — *now covered*
+  ([`failure_modes/modulatory_signal_without_selection_authority.md`](failure_modes/modulatory_signal_without_selection_authority.md),
+  added 2026-06-03; mechanism type *Precision dysregulation (selection-authority variant)*; REE-v3 604a/624a;
+  abulia / negative-symptom analogue at the basal-ganglia selection gate). A drive or bias (curiosity, vigor,
+  goal salience) is computed and gated but never changes the selected action; distinct from
+  commitment-threshold miscalibration (it is upstream of the threshold) and from goal proxy lock-in.
 
 ### Mechanism classification extension
 
