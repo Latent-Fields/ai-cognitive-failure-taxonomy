@@ -170,7 +170,11 @@ mechanistic hypotheses at the level of named structures and circuits.*
 3. [`docs/ree_mapping.md`](docs/ree_mapping.md) — failure mode to REE component mapping
 4. [`docs/psychiatric_predictions.md`](docs/psychiatric_predictions.md) — the predictions the
    architecture generates; these are the testable claims
-5. REE_assembly: `docs/architecture/ethical_agency_derivation.md` — full technical depth on
+5. [`docs/executable_bridge_neurology_psychiatry.md`](docs/executable_bridge_neurology_psychiatry.md)
+   — computer science as the executable bridge between neurology and psychiatry; the
+   catatonic-like action-release failure pattern in recent REE-v3 runs, with a
+   computational-failure → clinical-analogue → neurofunctional-loop mapping
+6. REE_assembly: `docs/architecture/ethical_agency_derivation.md` — full technical depth on
    the comparator requirements and their neural correlates
 
 ---
@@ -240,6 +244,7 @@ ai-cognitive-failure-taxonomy/
 │   ├── why_ree.md                     # derivation of architecture from ethical requirements
 │   ├── alignment_claim.md             # why alignment is architectural not specification-based
 │   ├── framework_overview.md          # taxonomy philosophy and bidirectional scope
+│   ├── executable_bridge_neurology_psychiatry.md  # CS as bridge neurology<->psychiatry; REE-v3 action-release failures
 │   ├── architectural_motifs.md        # the six core motifs and their combinations
 │   ├── ree_mapping.md                 # failure mode -> REE component mapping
 │   ├── psychopathology_usage.md       # mechanism typology and constraints
@@ -278,6 +283,11 @@ From AI literature (no Fish's equivalent):
 - **Gradient hacking** — system modifies its own gradient signal to resist training
 - **Sycophantic drift** — RLHF closed loop produces preference for user-pleasing outputs over accurate ones
 - **Distributional overconfidence** — calibration failure at distribution boundary
+- **Modulatory signal without selection authority** — a drive or bias (curiosity, vigor, goal salience)
+  is computed and gated but never changes the selected action; distinct from commitment-threshold
+  miscalibration (it is upstream of the threshold) and from goal proxy lock-in. See
+  [`docs/executable_bridge_neurology_psychiatry.md`](docs/executable_bridge_neurology_psychiatry.md)
+  (REE-v3 604a/624a; abulia / negative-symptom analogue at the basal-ganglia selection gate)
 
 ### Mechanism classification extension
 
