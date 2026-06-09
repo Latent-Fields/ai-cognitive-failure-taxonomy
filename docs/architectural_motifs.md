@@ -52,3 +52,14 @@ coherence pressure failures invisible.
 unreliable signals (hypervigilance analog) and under-precision on reliable ones (anhedonia
 analog). Both produce planning failures, but through different mechanisms. The direction
 matters for mitigation.
+
+---
+
+## Motifs vs latent vulnerability axes
+
+Motifs are the **mechanism building blocks** — what a failure is made of. A complementary index,
+the [latent vulnerability axes](latent_vulnerability_axes.md), captures the **transdiagnostic
+dimensions** along which a system can be fragile — the directions in failure space that cut across
+the named entries. A named failure mode is built from motifs and *loads on* one or more axes;
+syndromes are emergent weighted clusters over those axes rather than discrete kinds. See
+[`latent_vulnerability_axes.md`](latent_vulnerability_axes.md).
